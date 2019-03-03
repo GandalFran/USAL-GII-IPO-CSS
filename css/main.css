@@ -1,0 +1,87 @@
+/*Header and buttons*/
+#top{
+  text-align: left;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#top > a:link, #top > a:visited {
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+    
+}
+
+/*Sections*/
+.section{
+    padding: 1%;
+    margin: 1%;
+    max-width: 75%;
+}
+
+/*subsections*/
+.need, .subsection{
+    padding: 5;
+    margin: 10px;
+    
+    //border-radius: 5px;
+    
+    display: grid;
+        grid-template-columns: repeat (3,2fr);
+        grid-template-rows: repeat (6, 4fr);
+}
+
+.need_title.main{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.need_value.main{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.need_title:nth-child(4){
+    grid-column: 1;
+    grid-row: 3;
+}
+
+p.need_value:nth-child(5){
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.need_title:nth-child(6){
+    grid-column: 1;
+    grid-row: 5;
+}
+
+p.need_value:nth-child(7){
+    grid-column: 1;
+    grid-row: 6;
+}
+
+.media{
+    grid-area: 2 / 2 / span 4 / span 2
+}S
+
+/*Go Up button*/
+.to_top > a{
+  content: url(icons/baseline-arrow_drop_up-24px.svg);
+}
+.to_top{
+    text-align: right;
+}
+
+/*links and images*/
+.media{
+  max-width: 100%;
+  height: auto;
+
+  padding: 10;
+    
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

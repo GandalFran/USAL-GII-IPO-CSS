@@ -1,59 +1,55 @@
+@import url("main.css");
 
+/* CSS - Cascading Style Sheet */
+/* Palette color codes */
+/* Palette URL: http://paletton.com/#uid=23B0u0kpmvrilJblZAZtzsitylE */
 
-<!-------------------Responsive-design-------------------->
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-}
-
-
-
-
-div.section > div.to_top > a{
-  content: url(url(https://example.com/MaterialIcons-Regular.eot));
+:root{
+    --blue:#1DA1F2 ;
+    --black:#14171A ;
+    --darkGray:#657786 ;
+    --lightGray:#AAB8C2 ;
+    --extraLightGray:#F5F8FA ;
+    --extraExtraLightGray:#E1E8ED ;
+    --white:#FFFFFF;
     
-    padding-left:19px;
+    --titleFont:'Helvetica Neue';
+    --textFont:'Roman';
 }
 
+/*letter*/
+html{
+    font-family: var(--titleFont), sans-serif;
+    color: var(--black);
+    background-color: var(--extraLightGray);
+}
 
-<!--------------------Style-definition------------------->
+/*hide separators*/
+hr {
+    visibility:hidden;
+}
 
-<!--Header-and-buttons-->
-
+/*Header and buttons*/
 #top{
-  background-color: dimgray;
+  font-weight: bold;
+  background-color: var(--blue);
   color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  text-decoration: none;
-}
-#top > a:link, #top > a:visited {
-  background-color: black;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display:inline-block;
 }
 
-<!--Generic-sections-->
-div{
-    background-color: aqua;
-    margin: 20;
+#top > a:link, #top > a:visited {
+  background-color: var(--extraLightGray);
+  color: var(--blue);
+  border-radius: 7;
+}
+
+/*Sections*/
+.section{
+    margin-left: 0px;
+    margin-right:0px;
+    background-color: var(--blue);
+}
+
+/*Subsections*/
+.need, .subsection{
+    background-color: var(--extraExtraLightGray);
 }
