@@ -24,10 +24,6 @@ html{
     background-color: var(--extraLightGray);
 }
 
-/*hide separators*/
-hr {
-    visibility:hidden;
-}
 
 /*Header and buttons*/
 #top{
@@ -44,12 +40,18 @@ hr {
 
 /*Sections*/
 .section{
-    margin-left: 0px;
-    margin-right:0px;
     background-color: var(--blue);
 }
+
+
 
 /*Subsections*/
 .need, .subsection{
     background-color: var(--extraExtraLightGray);
 }
+
+    .need_title.main, .need_value.main, .need_title:nth-child(4), p.need_value:nth-child(5), .need_title:nth-child(6){
+        font-weight: 280;
+        font-size: 20;
+        padding: 0;
+    }
