@@ -1,57 +1,68 @@
 @import url("main.css");
 
-/* CSS - Cascading Style Sheet */
-/* Palette color codes */
-/* Palette URL: http://paletton.com/#uid=23B0u0kpmvrilJblZAZtzsitylE */
+/* CSS - Cascading Style Sheet
+   Palette color codes
+   Palette URL: http://paletton.com/#uid=12E0u0kvrfW+K1eYD4idQpoa9su 
+                http://paletton.com/export/index.php */
 
 :root{
-    --blue:#1DA1F2 ;
-    --black:#14171A ;
-    --darkGray:#657786 ;
-    --lightGray:#AAB8C2 ;
-    --extraLightGray:#F5F8FA ;
-    --extraExtraLightGray:#E1E8ED ;
-    --white:#FFFFFF;
+    --headerGreen:#2B6F02;
+    --sectionGreen:#558D35;
+    --subsectionGreen:#9FC687;
     
-    --titleFont:'Helvetica Neue';
-    --textFont:'Roman';
+    --darkergreen:#163C00;
+    
+    --gray:#E1E8ED;
+    --white:#FFFFFF;
+    --black:#14171A;
+    
+    --titleFont:"Segoe UI";
+    --textFont:"Georgia";
 }
 
 /*letter*/
 html{
-    font-family: var(--titleFont), sans-serif;
-    color: var(--black);
-    background-color: var(--extraLightGray);
+  font-family: var(--textFont), sans-serif;
+  text-rendering: optimizeLegibility;
+  
+  color: var(--black);
+  background-color: var(--gray);
 }
 
 
 /*Header and buttons*/
 #top{
+  font-family: var(--titleFont);
   font-weight: bold;
-  background-color: var(--blue);
+  background-color: var(--headerGreen);
   color: #ffffff;
 }
 
 #top > a:link, #top > a:visited {
-  background-color: var(--extraLightGray);
+  background-color: var(--darkergreen);
   color: var(--blue);
   border-radius: 7;
 }
 
 /*Sections*/
 .section{
-    background-color: var(--blue);
+    background-color: var(--sectionGreen);
 }
 
+.section_title, .subsection_title{
+    font-family: var(--titleFont), sans-serif;
+    color: var(--white);
+}
 
 
 /*Subsections*/
 .need, .subsection{
-    background-color: var(--extraExtraLightGray);
+    background-color: var(--subsectionGreen);
 }
 
     .need_title.main, .need_value.main, .need_title:nth-child(4), p.need_value:nth-child(5), .need_title:nth-child(6){
         font-weight: 280;
-        font-size: 20;
+        font-size: 25;
         padding: 0;
+        font-family: var(--titleFont), sans-serif;
     }

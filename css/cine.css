@@ -1,2 +1,58 @@
 @import url("main.css");
 
+:root{
+    --yellow:#f9c700;
+    --blue:#1DA1F2 ;
+    --black:#14171A ;
+    --darkGray:#657786 ;
+    --lightGray:#AAB8C2 ;
+    --extraLightGray:#F5F8FA ;
+    --extraExtraLightGray:#E1E8ED ;
+    --white:#FFFFFF;
+    
+    --titleFont:'Helvetica Neue';
+    --textFont:'Roman';
+}
+
+/*letter*/
+html{
+    font-family: var(--titleFont), sans-serif;
+    color: var(--black);
+    background-color: var(--extraLightGray);
+}
+
+
+/*Header and buttons*/
+#top{
+  font-weight: bold;
+  background-color: var(--blue);
+  color: #ffffff;
+}
+
+#top > a:link, #top > a:visited {
+  background-color: var(--extraLightGray);
+  color: var(--blue);
+  border-radius: 7;
+}
+
+/*Sections*/
+.section{
+    background-color: var(--blue);
+    font-family: var(--textFont), sans-serif;
+}
+
+.section_title, .subsection_title{
+    color: var(--yellow);
+    font-family: var(--titleFont), sans-serif;
+}
+
+/*Subsections*/
+.need, .subsection{
+    background-color: var(--extraExtraLightGray);
+}
+
+    .need_title.main, .need_value.main, .need_title:nth-child(4), p.need_value:nth-child(5), .need_title:nth-child(6){
+        font-weight: 280;
+        font-size: 20;
+        padding: 0;
+    }

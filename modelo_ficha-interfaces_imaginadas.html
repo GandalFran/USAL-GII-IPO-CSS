@@ -4,6 +4,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+<script>
+function doCssChange(){
+	var currentCss = document.getElementById('cssLink'); 
+	if(currentCss == '/css/tecnologia.css')
+		document.getElementById('cssLink').href='/css/cine.css';
+	else if(currentCss == '/css/cine.css')
+		document.getElementById('cssLink').href='/css/cienciaFiccion.css';
+	else if(currentCss == '/css/cienciaFiccion.css')
+		document.getElementById('cssLink').href='/css/tecnologia.css';
+}
+</script>
 
 <!--Modelo de ficha (HTML)-->
 <!--Se trata de una plantilla para la elaboración de una ficha de análisis de una película o serie para el proyecto Interfaces Imaginadas-->
@@ -14,12 +25,7 @@
   <a href="#Tecnologias">Tecnologías</a> 
   <a href="#Impacto">Impacto</a> 
   <a href="#Referencias">Referencias</a>
-  <a>
-    <!--Botones cambiar hoja estilos-->
-    <button onclick="document.getElementById('cssLink').href='/css/cine.css'">cine</button>
-    <button onclick="document.getElementById('cssLink').href='/css/cienciaFiccion.css'">cienciaFiccion</button>
-    <button onclick="document.getElementById('cssLink').href='/css/tecnologia.css'">tecnologia</button>
-  </a>
+  <a> <button onclick="doCssChange()">Change css</button></a>
 </nav>
 <!--Sinopsis-->
 <div class="section" id="Sinopsis">
@@ -39,7 +45,7 @@
   
   <div class="need">
     <hr class="separador" />
-    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h2 class="need_value main">Gadget 1</h2>
+    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h3 class="need_value main">Gadget 1</h3>
     <h3 class="need_title">Primera Aparición:</h3><p class="need_value"> 23:36</p>
     <h3 class="need_title">Necesidad:</h3> <p class="need_value">Nulla homero moderatius ut eum, dolores nominati sea eu. Lorem praesent in vel, ius et solet cetero. Ea duo mundi iisque, vix legere dissentias et, est omnes melius ad. Iuvaret postulant eu eam, te offendit constituam pro. Qui et putent noster vivendo, ea duo cibo dolorum, augue constituam inciderint vis ne. Inani tollit an quo, mei alia elit cetero ea, ut est laoreet philosophia.</p>
     
@@ -49,7 +55,7 @@
   
   <div class="need">
     <hr class="separador" />
-    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h2 class="need_value main">Gadget 2</h2>
+    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h3 class="need_value main">Gadget 2</h3>
     <h3 class="need_title">Primera Aparición:</h3><p class="need_value"> 26:24</p>
     <h3 class="need_title">Necesidad:</h3> <p class="need_value">Ut vix tamquam sadipscing, in verear labores assentior eum. Ea ullum detracto partiendo his. Ut novum quidam aliquid nam. Dolor laboramus nam ad..</p>
     
@@ -63,7 +69,7 @@
   
   <div class="need">
     <hr class="separador" />
-    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h2 class="need_value main">Gadget 3</h2>
+    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h3 class="need_value main">Gadget 3</h3>
     <h3 class="need_title">Primera Aparición:</h3><p class="need_value"> 26:42</p>
     <h3 class="need_title">Necesidad:</h3> <p class="need_value">Quaeque instructior nam no, brute vocibus an sit. Usu no modo fierent maluisset, et est tantas aliquam suscipiantur, quo verear tincidunt in. Tibique vituperata adversarium vis ne, mei mazim patrioque concludaturque ea. Ad duo mutat novum. Consul vidisse feugait per no, eum apeirian accommodare te. Ad dicta nulla convenire vim, ipsum ubique pro ea. Sit in mutat regione hendrerit.</p>
     
@@ -72,7 +78,7 @@
   
   <div class="need">
     <hr class="separador" />
-    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h2 class="need_value main">Gadget 4</h2>
+    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h3 class="need_value main">Gadget 4</h3>
     <h3 class="need_title">Primera Aparición:</h3><p class="need_value"> 27:45</p>
     <h3 class="need_title">Necesidad:</h3> <p class="need_value">Nec legere forensibus ea. Eum scripta dissentiet et, atqui quando te eum. Est lucilius atomorum in, duo ne veniam ornatus. Ut nemore evertitur vim, cum aperiri sensibus maluisset no, omnis impedit instructior at eum. </p>
     
@@ -90,7 +96,7 @@
   
   <div class="need">
     <hr class="separador" />
-    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h2 class="need_value main">Gadget 6</h2>
+    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h3 class="need_value main">Gadget 6</h3>
     <h3 class="need_title">Primera Aparición:</h3><p class="need_value"> 58:50</p>
     <h3 class="need_title">Necesidad:</h3> <p class="need_value">Te mea case deserunt iracundia, id probo iudico lucilius nam. Fugit dolore corrumpit nec ne. Et modus lorem option usu. Duo ex omnes primis voluptua, pri quas vitae propriae ex. At volutpat deseruisse duo, facilis voluptatum ex ius. </p>
     
@@ -99,7 +105,7 @@
   
   <div class="need">
     <hr class="separador" />
-    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h2 class="need_value main">Gadget 7</h2>
+    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h3 class="need_value main">Gadget 7</h3>
     <h3 class="need_title">Primera Aparición:</h3><p class="need_value"> 1:01:45</p>
     <h3 class="need_title">Necesidad:</h3> <p class="need_value">Eam oporteat expetendis sadipscing no, eum ferri denique facilisis et. Cu habeo primis quidam sit, nam ex ipsum putent feugiat. Eos at eros vide complectitur, ei sale facer error mel. Ius exerci appareat an, pri vocent civibus petentium eu. Vim dolore nostrum ut, habeo dolorem nec ut. </p>
     
