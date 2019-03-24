@@ -10,14 +10,14 @@
 }
 
 #top > a:link, #top > a:visited {
-  padding: 1% 2%;
-  text-align: center;
-  text-decoration: none;
-  display:inline-block;
-  border-radius: 7;
-    
+	padding: 1% 2%;
+	text-align: center;
+	text-decoration: none;
+	display:inline-block;
 }
 
+
+/*Section*/
 .section{
     padding: 1%;
     margin: 1%;
@@ -44,10 +44,20 @@
             visibility:collapse;
         }
 
+
+/*Subsection*/
     .subsection{
         margin: 1%;
         padding: 1%;
+        display: grid;
+            grid-template-rows: 30% 70%;
     }
+        .subsection_title{
+            grid-row: 1;
+        }
+        .subsection_text{
+            grid-row: 2;
+        }
 
 /*Go Up button*/
 .to_top{
@@ -147,21 +157,6 @@
                 height: 100%; 
                 grid-area: 1 / 1 / span 5 / span 2;
             }
-
-        /*Subsections*/
-        .subsection{
-            padding: 1%;
-            margin: 1%;
-
-            display: grid;
-                grid-template-rows: 10%, 90%;
-        }
-            .subsection_title{
-                grid-row: 1;
-            }
-            .subsection_text{
-                grid-row: 2;
-            }
 }
 
 
@@ -219,16 +214,4 @@
                 height: 100%; 
                 grid-area: 8 / 1 / span 3 / span 1;
             }
-        /*ubsections*/
-        .subsection{
-            display: grid;
-                grid-template-rows: 10%, 90%;
-        }
-            .subsection_title{
-                grid-row: 1;
-            }
-            .subsection_text{
-                grid-row: 2;
-            }
-
 }

@@ -69,7 +69,7 @@ p.need_value:nth-child(7), p.need_value:nth-child(5), .subsection_text{
 
 /*Font*/
 #top{
-    font-size: 23;
+    font-size: 130%;
     font-family: var(--titleFont), sans-serif;
 }
 
@@ -79,9 +79,9 @@ p.need_value:nth-child(7), p.need_value:nth-child(5), .subsection_text{
     font-family: var(--titleFont), sans-serif;
 }
 
-.need_title.main, .need_value.main, .need_title:nth-child(4), p.need_value:nth-child(5), .need_title:nth-child(6){
-    font-size: 25;
-    font-weight: 280;
+.need_title.main, .need_value.main, .need_title, p.need_value:nth-child(5){
+    font-size: 140%;
+    font-weight: normal;
     font-family: var(--titleFont), sans-serif;
 }
 

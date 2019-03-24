@@ -5,18 +5,18 @@
 
 @import url("disposition.css");
 
-:root{
-    --defaultBackgournd:#E1E8ED;
-    --headerBackground:#64AAD8;
-    --sectionBackground:#4290C3;
-    --subsectionBackground:#8EC5E9;
+:root {
+    --defaultBackgournd: #E1E8ED;
+    --headerBackground: #64AAD8;
+    --sectionBackground: #4290C3;
+    --subsectionBackground: #8EC5E9;
     
-    --headerColor:#FFFFFF;
-    --titleColor:#FFFFFF;
-    --textColor:#14171A;
+    --headerColor: #FFFFFF;
+    --titleColor: #FFFFFF;
+    --textColor: #14171A;
     
-    --titleFont:"Segoe UI";
-    --textFont:"Georgia";
+    --titleFont: "Segoe UI";
+    --textFont: "Georgia";
 }
 
 /*Background*/
@@ -51,7 +51,7 @@ p, ol{
 
 /*Font*/
 #top{
-    font-size: 23;
+    font-size: 130%;
     font-weight: bold;
     font-family: var(--titleFont);
 }
@@ -60,9 +60,9 @@ p, ol{
     font-family: var(--titleFont), sans-serif;
 }
 
-.need_title.main, .need_value.main, .need_title:nth-child(4), p.need_value:nth-child(5), .need_title:nth-child(6){
-    font-size: 25;
-    font-weight: 280;
+.need_title.main, .need_value.main, .need_title, p.need_value:nth-child(5){
+    font-size: 140%;
+    font-weight: normal;
     font-family: var(--titleFont), sans-serif;
 }
 
