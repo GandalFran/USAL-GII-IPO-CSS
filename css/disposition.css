@@ -49,13 +49,12 @@
         padding: 1%;
     }
 
-
 /*Go Up button*/
-.to_top > a{
-  content: url(icons/baseline-arrow_drop_up-24px.svg);
-}
 .to_top{
     text-align: right;
+}
+.to_top > a{
+  content: url(icons/blackArrow.svg);
 }
 
 /*==========================================================================*/
