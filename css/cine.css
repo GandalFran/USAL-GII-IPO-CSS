@@ -1,58 +1,83 @@
-@import url("main.css");
+/* 
+    Color src:  https://www.color-hex.com/color-palette/184
+                https://www.schemecolor.com/black-gold-color-palette.php
+*/
+
+@import url("disposition.css");
 
 :root{
-    --yellow:#f9c700;
-    --blue:#1DA1F2 ;
-    --black:#14171A ;
-    --darkGray:#657786 ;
-    --lightGray:#AAB8C2 ;
-    --extraLightGray:#F5F8FA ;
-    --extraExtraLightGray:#E1E8ED ;
-    --white:#FFFFFF;
+    --defaultBackgournd:#CCCCCC;
+    --headerBackground:#111111;
+    --sectionBackground:#777777;
+    --subsectionBackground:#E7D291;
     
-    --titleFont:'Helvetica Neue';
-    --textFont:'Roman';
+    --headerColor:#FFDD03;
+    --titleColor:#FFDD03;
+    --subsectionTitleColor:#FFFFFF;
+    --textColor:#FFFFFF;
+    --subsectionTextColor:#000000;
+    
+    --titleFont:"Century";
+    --textFont:"Century";
 }
 
-/*letter*/
+/*Background*/
 html{
-    font-family: var(--titleFont), sans-serif;
-    color: var(--black);
-    background-color: var(--extraLightGray);
+  background-color: var(--defaultBackgournd);
 }
 
-
-/*Header and buttons*/
 #top{
-  font-weight: bold;
-  background-color: var(--blue);
-  color: #ffffff;
+  background-color: var(--headerBackground);
 }
 
-#top > a:link, #top > a:visited {
-  background-color: var(--extraLightGray);
-  color: var(--blue);
-  border-radius: 7;
-}
-
-/*Sections*/
 .section{
-    background-color: var(--blue);
-    font-family: var(--textFont), sans-serif;
+    background-color: var(--sectionBackground);
+}
+
+.need, .subsection{
+    background-color: var(--subsectionBackground);
+}
+
+/*Text color*/
+#top > a:link, #top > a:visited {
+  color: var(--headerColor);
+}
+
+.section_title{
+    color: var(--titleColor);
+}
+.subsection_title{
+    color: var(--subsectionTitleColor);
+}
+
+p, ol{
+    color: var(--textColor);
+}
+
+p.need_value:nth-child(7), p.need_value:nth-child(5), .subsection_text{
+    color: var(--subsectionTextColor);
+}
+
+/*Font*/
+#top{
+    font-size: 23;
+    font-weight: bold;
+    font-family: var(--titleFont), arial;
 }
 
 .section_title, .subsection_title{
-    color: var(--yellow);
-    font-family: var(--titleFont), sans-serif;
+    font-family: var(--titleFont), arial;
 }
 
-/*Subsections*/
-.need, .subsection{
-    background-color: var(--extraExtraLightGray);
+.need_title.main, .need_value.main, .need_title:nth-child(4), p.need_value:nth-child(5), .need_title:nth-child(6){
+    font-size: 25;
+    font-weight: 280;
+    font-family: var(--titleFont), arial;
 }
 
-    .need_title.main, .need_value.main, .need_title:nth-child(4), p.need_value:nth-child(5), .need_title:nth-child(6){
-        font-weight: 280;
-        font-size: 20;
-        padding: 0;
-    }
+p, ol{
+  text-rendering: optimizeLegibility;
+  font-family: var(--textFont), sans-serif;
+}
+
+

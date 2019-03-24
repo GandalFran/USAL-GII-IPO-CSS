@@ -1,68 +1,74 @@
-@import url("main.css");
+/* 
+    Palette URL: http://paletton.com/#uid=13v0u0kihNr7hYjdkTrmwGdqQyB 
+    Color src: https://magnet.xataka.com/
+*/
 
-/* CSS - Cascading Style Sheet
-   Palette color codes
-   Palette URL: http://paletton.com/#uid=12E0u0kvrfW+K1eYD4idQpoa9su 
-                http://paletton.com/export/index.php */
+@import url("disposition.css");
 
 :root{
-    --headerGreen:#2B6F02;
-    --sectionGreen:#558D35;
-    --subsectionGreen:#9FC687;
+    --defaultBackgournd:#E1E8ED;
+    --headerBackground:#64AAD8;
+    --sectionBackground:#4290C3;
+    --subsectionBackground:#8EC5E9;
     
-    --darkergreen:#163C00;
-    
-    --gray:#E1E8ED;
-    --white:#FFFFFF;
-    --black:#14171A;
+    --headerColor:#FFFFFF;
+    --titleColor:#FFFFFF;
+    --textColor:#14171A;
     
     --titleFont:"Segoe UI";
     --textFont:"Georgia";
 }
 
-/*letter*/
+/*Background*/
 html{
-  font-family: var(--textFont), sans-serif;
-  text-rendering: optimizeLegibility;
-  
-  color: var(--black);
-  background-color: var(--gray);
+  background-color: var(--defaultBackgournd);
 }
 
-
-/*Header and buttons*/
 #top{
-  font-family: var(--titleFont);
-  font-weight: bold;
-  background-color: var(--headerGreen);
-  color: #ffffff;
+  background-color: var(--headerBackground);
 }
 
-#top > a:link, #top > a:visited {
-  background-color: var(--darkergreen);
-  color: var(--blue);
-  border-radius: 7;
-}
-
-/*Sections*/
 .section{
-    background-color: var(--sectionGreen);
+    background-color: var(--sectionBackground);
+}
+
+.need, .subsection{
+    background-color: var(--subsectionBackground);
+}
+
+/*Text color*/
+#top > a:link, #top > a:visited {
+  color: var(--headerColor);
+}
+
+.section_title, .subsection_title{
+    color: var(--titleColor);
+}
+
+p, ol{
+    color: var(--textColor);
+}
+
+/*Font*/
+#top{
+    font-size: 23;
+    font-weight: bold;
+    font-family: var(--titleFont);
 }
 
 .section_title, .subsection_title{
     font-family: var(--titleFont), sans-serif;
-    color: var(--white);
+}
+
+.need_title.main, .need_value.main, .need_title:nth-child(4), p.need_value:nth-child(5), .need_title:nth-child(6){
+    font-size: 25;
+    font-weight: 280;
+    font-family: var(--titleFont), sans-serif;
+}
+
+p, ol{
+  text-rendering: optimizeLegibility;
+  font-family: var(--textFont), sans-serif;
 }
 
 
-/*Subsections*/
-.need, .subsection{
-    background-color: var(--subsectionGreen);
-}
-
-    .need_title.main, .need_value.main, .need_title:nth-child(4), p.need_value:nth-child(5), .need_title:nth-child(6){
-        font-weight: 280;
-        font-size: 25;
-        padding: 0;
-        font-family: var(--titleFont), sans-serif;
-    }

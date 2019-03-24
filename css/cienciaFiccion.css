@@ -1,66 +1,93 @@
-@import url("main.css");
+/* 
+    Palette URL: http://paletton.com/#uid=13v0u0kihNr7hYjdkTrmwGdqQyB 
+    Color src: https://www.color-hex.com/color-palette/2449
+*/
 
-/* CSS - Cascading Style Sheet */
-/* Palette color codes */
-/* Palette URL: http://paletton.com/#uid=23B0u0kpmvrilJblZAZtzsitylE */
+@import url("disposition.css");
 
-/*https://www.1001fonts.com/united-kingdom-font.html*/
-@font-face{
-    font-family: 'United Kingdom';
-    src: url(./fonts/UnitedKingdomSciFi.otf);
+@font-face {
+    font-family: 'scifi';
+    src: url('fonts/scifi.ttf');
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('fonts/roboto.ttf');
 }
 
 :root{
-    --blue:#1DA1F2 ;
-    --black:#14171A ;
-    --darkGray:#657786 ;
-    --lightGray:#AAB8C2 ;
-    --extraLightGray:#F5F8FA ;
-    --extraExtraLightGray:#E1E8ED ;
-    --white:#FFFFFF;
+    --defaultBackgournd:#b7dee9;
+    --headerBackground:#00A300;
+    --sectionBackground:#7b8ba5;
+    --subsectionBackground:#9FED9F;
     
-    --titleFont:'United Kingdom';
-    --textFont:'Roman';
+    --headerColor:#FFFFFF;
+    --titleColor:#74ff78;
+    --subsectionTitleColor:#00A300;
+    --textColor:#000000;
+    --subsectionTextColor:#000000;
+    
+    --titleFont:'scifi';
+    --textFont:'roboto';
 }
 
-/*letter*/
+/*Background*/
 html{
-    font-family: var(--titleFont), sans-serif;
-    color: var(--black);
-    background-color: var(--extraLightGray);
+  background-color: var(--defaultBackgournd);
 }
 
-
-/*Header and buttons*/
 #top{
-  font-weight: bold;
-  background-color: var(--blue);
-  color: #ffffff;
+  background-color: var(--headerBackground);
 }
 
-#top > a:link, #top > a:visited {
-  background-color: var(--extraLightGray);
-  color: var(--blue);
-  border-radius: 7;
-}
-
-/*Sections*/
 .section{
-    font-family: var(--textFont), sans-serif;
-    background-color: var(--blue);
+    background-color: var(--sectionBackground);
+}
+
+.need, .subsection{
+    background-color: var(--subsectionBackground);
+}
+
+/*Text color*/
+#top > a:link, #top > a:visited {
+  color: var(--headerColor);
+}
+
+.section_title{
+    color: var(--titleColor);
+}
+.subsection_title{
+    color: var(--subsectionTitleColor);
+}
+
+p, ol{
+    color: var(--textColor);
+}
+
+p.need_value:nth-child(7), p.need_value:nth-child(5), .subsection_text{
+    color: var(--subsectionTextColor);
+}
+
+/*Font*/
+#top{
+    font-size: 23;
+    font-family: var(--titleFont), sans-serif;
 }
 
 .section_title, .subsection_title{
+    font-size: 30;
+    font-weight: 300;
     font-family: var(--titleFont), sans-serif;
 }
 
-/*Subsections*/
-.need, .subsection{
-    background-color: var(--extraExtraLightGray);
+.need_title.main, .need_value.main, .need_title:nth-child(4), p.need_value:nth-child(5), .need_title:nth-child(6){
+    font-size: 25;
+    font-weight: 280;
+    font-family: var(--titleFont), sans-serif;
 }
 
-    .need_title.main, .need_value.main, .need_title:nth-child(4), p.need_value:nth-child(5), .need_title:nth-child(6){
-        font-weight: 280;
-        font-size: 20;
-        padding: 0;
-    }
+p, ol{
+  text-rendering: optimizeLegibility;
+  font-family: var(--textFont), sans-serif;
+}
+
+

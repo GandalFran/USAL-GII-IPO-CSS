@@ -1,20 +1,9 @@
 <!---Head---->
 <head>
-    <link id="cssLink" rel="stylesheet" href="/css/tecnologia.css">
+    <link id="cssLink" rel="stylesheet" href="css/tecnologia.css">
+    <script src="js/utils.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
-<script>
-function doCssChange(){
-	var currentCss = document.getElementById('cssLink'); 
-	if(currentCss == '/css/tecnologia.css')
-		document.getElementById('cssLink').href='/css/cine.css';
-	else if(currentCss == '/css/cine.css')
-		document.getElementById('cssLink').href='/css/cienciaFiccion.css';
-	else if(currentCss == '/css/cienciaFiccion.css')
-		document.getElementById('cssLink').href='/css/tecnologia.css';
-}
-</script>
 
 <!--Modelo de ficha (HTML)-->
 <!--Se trata de una plantilla para la elaboración de una ficha de análisis de una película o serie para el proyecto Interfaces Imaginadas-->
@@ -25,7 +14,8 @@ function doCssChange(){
   <a href="#Tecnologias">Tecnologías</a> 
   <a href="#Impacto">Impacto</a> 
   <a href="#Referencias">Referencias</a>
-  <a> <button onclick="doCssChange()">Change css</button></a>
+  <a onclick="lastCSS()" href="#">Anterior</a>
+  <a onclick="nextCSS()" href="#">Siguiente</a>
 </nav>
 <!--Sinopsis-->
 <div class="section" id="Sinopsis">
@@ -137,7 +127,7 @@ function doCssChange(){
   
   <div class="subsection">
     <h3 class="subsection_title">Tecnologías imaginadas en el momento de la producción</h3>
-    <p class="section_text">Nec at saepe epicuri ocurreret. Oportere reprehendunt his ne, inani aliquando ex per. Ignota animal integre ut sit, ius [<a href="#ref2">2</a>] cu nonumes partiendo. Sea te nulla blandit. Duo at erat perpetua, cu affert probatus menandri sed [<a href="#ref3">3</a>].</p> 
+    <p class="subsection_text">Nec at saepe epicuri ocurreret. Oportere reprehendunt his ne, inani aliquando ex per. Ignota animal integre ut sit, ius [<a href="#ref2">2</a>] cu nonumes partiendo. Sea te nulla blandit. Duo at erat perpetua, cu affert probatus menandri sed [<a href="#ref3">3</a>].</p> 
   </div>
   <p><div class="to_top"><a href="#top">&nbsp;&nbsp;</a></div></p>
 </div><!--fin tecnologías-->
