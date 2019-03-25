@@ -60,7 +60,6 @@ p.need_value:nth-child(7), p.need_value:nth-child(5), .subsection_text{
 
 /*Font*/
 #top{
-    font-size: 130%;
     font-weight: bold;
     font-family: var(--titleFont), arial;
 }
